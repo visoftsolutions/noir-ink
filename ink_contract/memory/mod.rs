@@ -1,4 +1,5 @@
-mod verification_key;
+pub mod verification_key;
+pub mod proof_data;
 
 #[derive(Debug)]
 #[ink::storage_item]

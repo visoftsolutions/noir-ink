@@ -5,12 +5,12 @@ pub mod verify;
 
 #[ink::contract]
 mod ink_contract {
-    use crate::ultra_verification_key::load_verification_key::VerificationKey;
+    use crate::{ultra_verification_key::load_verification_key::VerificationKey, memory::proof_data::ProofData};
 
     #[ink(storage)]
     pub struct BaseUltraVerifier {
         verification_key: VerificationKey,
-
+        proof_data: ProofData
     }
 
     impl BaseUltraVerifier {
