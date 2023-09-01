@@ -114,5 +114,7 @@ pub fn load_verification_key() -> VerificationKey {
             .to_le_bytes(),
         g2x_y0: uint!("0x22febda3c0c0632a56475b4214e5615e11e6dd3f96e6cea2854a87d4dacc5e55")
             .to_le_bytes(),
+        omega_inverse: uint!("0x02e40daf409556c02bfc85eb303402b774954d30aeb0337eb85a71e6373428de")
+            .to_le_bytes(),
     }
 }

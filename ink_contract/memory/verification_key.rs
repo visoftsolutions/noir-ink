@@ -57,4 +57,7 @@ pub struct VerificationKey {
     pub g2x_x1: [u8; 32],
     pub g2x_y0: [u8; 32],
     pub g2x_y1: [u8; 32],
+
+    // moved from 'misc'
+    pub omega_inverse: [u8; 32],
 }
