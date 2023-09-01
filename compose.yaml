@@ -1,0 +1,8 @@
+services:
+  blockchain:
+    container_name: noir-ink-node
+    hostname: noir-ink-node
+    build:
+      context: ./ink_contract
+    ports:
+      - 9944:9944
