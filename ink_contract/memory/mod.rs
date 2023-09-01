@@ -1,5 +1,7 @@
-pub mod verification_key;
+pub mod challenges;
+pub mod local_variables;
 pub mod proof_data;
+pub mod verification_key;
 
 #[derive(Debug)]
 #[ink::storage_item]
