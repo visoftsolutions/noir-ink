@@ -5,5 +5,6 @@ pub mod local_variables;
 pub mod misc;
 pub mod proof_data;
 pub mod recursion_variable;
+pub mod sub_identity;
 pub mod success_flag;
 pub mod verification_key;
