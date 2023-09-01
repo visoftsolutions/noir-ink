@@ -1,6 +1,5 @@
 use crate::ink_contract::BaseUltraVerifier;
 
-pub mod constant;
 pub mod perform_pairing;
 pub mod load_proof;
 
