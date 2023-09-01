@@ -2,7 +2,7 @@ use ethnum::U256;
 
 use crate::{ink_contract::BaseUltraVerifier, memory::constant::Q};
 
-pub fn load_proof(ctx: &mut BaseUltraVerifier, _proof: Vec<u8>) {
+pub fn load_proof(ctx: &mut BaseUltraVerifier, _proof: &Vec<u8>) {
     let (chunk, _) = _proof.as_chunks::<32>();
     ctx.proof_data.w1_y = (U256::from_le_bytes(chunk[0]) % Q).to_le_bytes();
     ctx.proof_data.w1_x = (U256::from_le_bytes(chunk[1]) % Q).to_le_bytes();

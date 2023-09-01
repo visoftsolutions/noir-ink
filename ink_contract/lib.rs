@@ -6,10 +6,11 @@ pub mod verify;
 
 #[ink::contract]
 mod ink_contract {
-    use memory::{challenges::Challenges, local_variables::LocalVariables, misc::Misc, recursion_variable::RecursionVariable, sub_identity::SubIdentity, success_flag::SuccessFlag};
+    use crate::memory::{challenges::Challenges, local_variables::LocalVariables, misc::Misc, recursion_variable::RecursionVariable, sub_identity::SubIdentity, success_flag::SuccessFlag};
 
-    use crate::{ultra_verification_key::load_verification_key::VerificationKey, memory::proof_data::ProofData};
-
+    use crate::{memory::proof_data::ProofData};
+    use crate::memory::verification_key::VerificationKey;
+    
     #[ink(storage)]
     pub struct BaseUltraVerifier {
         pub public_inputs_hash: [u8; 32],
