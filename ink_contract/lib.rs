@@ -3,25 +3,22 @@ pub mod ultra_verification_key;
 
 #[ink::contract]
 mod ink_contract {
+    use crate::ultra_verification_key::load_verification_key::VerificationKey;
+
     #[ink(storage)]
     pub struct BaseUltraVerifier {
-        value: bool,
+        verification_key: VerificationKey,
     }
 
     impl BaseUltraVerifier {
         #[ink(constructor)]
-        pub fn new(init_value: bool) -> Self {
-            Self { value: init_value }
-        }
-
-        #[ink(constructor)]
-        pub fn default() -> Self {
-            Self::new(Default::default())
+        pub fn new() -> Self {
+            todo!()
         }
 
         #[ink(message)]
         pub fn get(&self) -> bool {
-            self.value
+            todo!()
         }
     }
 }
