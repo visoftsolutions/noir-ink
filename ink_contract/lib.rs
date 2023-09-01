@@ -10,8 +10,9 @@ mod ink_contract {
 
     #[ink(storage)]
     pub struct BaseUltraVerifier {
+        pub public_inputs_hash: [u8; 32],
         pub verification_key: VerificationKey,
-        pub proof_data: ProofData
+        pub proof_data: ProofData,
     }
 
     impl BaseUltraVerifier {
