@@ -1,4 +1,5 @@
 #![cfg_attr(not(feature = "std"), no_std, no_main)]
+pub mod ultra_verification_key;
 
 #[ink::contract]
 mod ink_contract {
