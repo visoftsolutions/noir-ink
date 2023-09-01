@@ -9,6 +9,7 @@ mod ink_contract {
     #[ink(storage)]
     pub struct BaseUltraVerifier {
         verification_key: VerificationKey,
+
     }
 
     impl BaseUltraVerifier {
